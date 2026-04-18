@@ -42,15 +42,19 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-[40px] pt-[48px] pb-[80px] items-start border-t border-white/10">
           {/* Column 1: Navigation */}
           <div className="flex flex-col gap-6">
-             <div className="flex flex-col gap-2">
-                <div className="flex items-center gap-3">
-                   <div className="w-8 h-8 rounded-xl bg-primary flex items-center justify-center">
-                     <span className="text-sm text-white font-black">+</span>
-                   </div>
-                   <span className="text-5xl lg:text-7xl font-black tracking-tighter uppercase italic">Clyra</span>
+             <div className="flex items-center gap-2">
+                <div className="w-5 h-5 rounded-lg bg-primary flex items-center justify-center">
+                  <span className="text-[10px] text-white">+</span>
                 </div>
-                <p className="text-white/40 text-sm font-medium tracking-wide ml-1">Universal Clinical Intelligence</p>
+                <span className="text-lg font-bold">Clyra</span>
              </div>
+              <div className="flex flex-wrap gap-x-8 gap-y-3">
+                 <a href="/" className="text-[14px] text-white/60 hover:text-white transition-colors">Home</a>
+                 <a href="#doctors" className="text-[14px] text-white/60 hover:text-white transition-colors">Doctors</a>
+                 <a href="#clinics" className="text-[14px] text-white/60 hover:text-white transition-colors">Clinics</a>
+                 <a href="#patients" className="text-[14px] text-white/60 hover:text-white transition-colors">Patients</a>
+                 <a href="#waitlist" className="text-[14px] text-white/60 hover:text-white transition-colors">Contact</a>
+              </div>
           </div>
 
           {/* Socials */}
